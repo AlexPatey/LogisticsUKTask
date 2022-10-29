@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins";
+}
+
 .App {
   text-align: center;
 }
@@ -43,16 +47,63 @@
 }
 
 .menuContainer {
-  margin: 0;
-  width: 400px;
-  padding: 20px;
+  float: left;
+  width: 100px;
   text-align: left;
-  font-size: 16pt;
+  padding: 20px;
+}
+
+.menuItem {
+  margin: 0 0 5px 0;
+  font-size: 14pt;
 }
 
 .driverContainer {
-  margin: 0;
-  width: calc(100% - 400px);
+  float: right;
+  width: calc(100% - 180px);
+  text-align: left;
+  padding: 20px;
+}
+
+.driverSearchBar {
+  width: 300px;
+  font-size: 14pt;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.driverTableHeader {
+  font-weight: 600;
+  font-size: 14pt;
+  padding: 0 20px 0 0;
+}
+
+.driverDetails {
+  font-size: 14pt;
+  padding: 0 5px 0 0;
+}
+
+.driverName {
+  width: 200px;
+}
+
+.driverVehicleRegistration {
+  width: 200px;
+}
+
+.driverTotalActivityDuration {
+  width: 200px;
+}
+
+.dateBox {
+  height: 70px;
+  width: 70px;
+  background-color: #eee;
+}
+
+.dateBoxGreen {
+  background-color: greenyellow;
 }
 
 @keyframes App-logo-spin {

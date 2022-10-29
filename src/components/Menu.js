@@ -1,5 +1,6 @@
 import React from 'react';
 import menuJson from "../data/menu.json";
+import '../App.css';
 
 export default class Menu extends React.Component {
 
@@ -13,7 +14,7 @@ export default class Menu extends React.Component {
         const menuItemElements = [];
         
         for (let i = 0; i < this.state.menuItems.length; i++) {
-            menuItemElements.push(<p key={this.state.menuItems[i].title}>{this.state.menuItems[i].title}</p>);
+            menuItemElements.push(<p key={this.state.menuItems[i].title} className="menuItem">{this.state.menuItems[i].title}</p>);
         }
 
       return (
