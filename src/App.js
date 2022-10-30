@@ -1,18 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header.js';
-import Menu from './components/Menu.js';
-import Drivers from './components/Drivers.js';
+
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Drivers from "./pages/Drivers";
+import Vehicles from "./pages/Vehicles";
+import About from "./pages/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <div className="bodyContainer">
-          <Menu/>
-          <Drivers />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="drivers" element={<Drivers />} />
+          <Route path="vehicles" element={<Vehicles />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 
