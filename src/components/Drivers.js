@@ -80,13 +80,13 @@ export default class Drivers extends React.Component {
             <table>
                 <thead>
                     <tr>
-                        <th className='driverTableHeader'>Driver Name</th>
-                        <th className='driverTableHeader'>Vehicle Registration</th>
-                        <th className='driverTableHeader'>Total Activity Duration</th>
-                        <th className='driverTableHeader'>Drive Duration</th>
-                        <th className='driverTableHeader'>Work Duration</th>
-                        <th className='driverTableHeader'>Available Duration</th>
-                        <th className='driverTableHeader'>Rest Duration</th>
+                        <th className='driverTableHeader driverInfoHeader'>Driver Name</th>
+                        <th className='driverTableHeader driverInfoHeader'>Vehicle Registration</th>
+                        <th className='driverTableHeader driverInfoHeader'>Total Activity Duration</th>
+                        <th className='driverTableHeader driverInfoHeader'>Drive Duration</th>
+                        <th className='driverTableHeader driverInfoHeader'>Work Duration</th>
+                        <th className='driverTableHeader driverInfoHeader'>Available Duration</th>
+                        <th className='driverTableHeader driverInfoHeader'>Rest Duration</th>
                         <th className='driverTableHeader'>Mon</th>
                         <th className='driverTableHeader'>Tue</th>
                         <th className='driverTableHeader'>Wed</th>
